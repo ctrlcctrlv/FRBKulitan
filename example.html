@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>FRB Taiwanese Kana</title>
+<style>
+@font-face {
+    font-family: "FRBKulitan2";
+    src: url("FRBKulitan.otf");
+}
+
+body {
+    font-family: "FRBKulitan2", "Noto Sans CJK TC", sans-serif;
+    font-weight: 500;
+    font-size: 3em
+}
+
+rt {
+    font-feature-settings: "ruby" on;
+}
+
+.vert, .vert * {
+    font-feature-settings: "vert" on;
+    font-feature-settings: "liga" on;
+}
+
+.vert {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    line-height:2em
+}
+
+.margin rt {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+</style>
+</head>
+
+<body>
+	<p class="vert">&#x14C00;&#x14C0E;&#x200D;&#x14C00;&#x14C01;&#x200D;&#x14C00;&#x14C01;&#x200D;&#x14C05;&#x14C03;&#x14C0B;&#x14C13;&#x14C0B;&#x14C13;&#x200D;&#x14C02;&#x14C0E;&#x200D;&#x14C08;</p>
+</body>
+</html>

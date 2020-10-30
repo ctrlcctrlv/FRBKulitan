@@ -1,0 +1,23 @@
+languagesystem latn dflt;
+languagesystem dflt DFLT;
+
+@kulitan = [kuli_la kuli_a kuli_i kuli_nga kuli_u kuli_dep_u kuli_na];
+
+feature vert {
+	lookup vert1 {
+		pos zwj @kulitan' <350 1000 650 -1000>;
+	} vert1;
+	lookup vert2 {
+		pos @kulitan' <-300 0 -800 0> zwj;
+	} vert2;
+} vert;
+
+feature liga {
+	lookup liga1 {
+		sub kuli_i zwj kuli_a by kuli_ia;
+	} liga1;
+	lookup liga2 {
+		lookupflag IgnoreMarks;
+		sub zwj kuli_u' by kuli_dep_u;
+	} liga2;
+} liga;
